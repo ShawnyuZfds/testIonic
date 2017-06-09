@@ -58,7 +58,8 @@
             "cordova-plugin-statusbar": {},
             "cordova-plugin-whitelist": {},
             "ionic-plugin-keyboard": {},
-            "angular": {}
+            "angular": {},
+            "@angular/core": {}
         },
         "platforms": [
             "android",
