@@ -1,6 +1,5 @@
 // http://ionicframework.com/docs/v2/theming/
 
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,3 +13,44 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+$pundit-green: #2ec95c;
+
+.nav-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  text-align: center;
+  background-color: $pundit-green;
+  color: #fff;
+  margin: auto;
+  height: auto;
+}
+
+.rating-container ul {
+  list-style-type: none;
+  padding: 0;
+  .rating-item {
+    height: 5rem;
+    color: #fff;
+    background-color: $pundit-green;
+    border: 1px solid grey;
+    margin-top: -1px;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &.selected {
+      background-color: darkgreen;
+    }
+    .rating-item-icon {
+      position: absolute;
+      left: 2rem;
+      display: none;
+      &.selected {
+        display: block;
+      }
+    }
+  }
+}

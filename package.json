@@ -1,7 +1,7 @@
 {
-    "name": "testIonic",
+    "name": "pundit",
     "version": "0.0.1",
-    "author": "Ionic Framework",
+    "author": "Shawn",
     "homepage": "http://ionicframework.com/",
     "private": true,
     "scripts": {
@@ -44,8 +44,8 @@
     },
     "devDependencies": {
         "@ionic/app-scripts": "1.3.7",
-        "@ionic/cli-plugin-cordova": "1.3.0",
-        "@ionic/cli-plugin-ionic-angular": "1.3.0",
+        "@ionic/cli-plugin-cordova": "1.4.0",
+        "@ionic/cli-plugin-ionic-angular": "1.3.1",
         "typescript": "2.3.3"
     },
     "description": "An Ionic project",

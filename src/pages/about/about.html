@@ -1,11 +1,26 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      About
+    <ion-title text-center>
+      {{currentPage}} of {{totalPage}}
     </ion-title>
+    <button ion-button class="nav-button">next</button>
   </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+  <h1 padding text-center>{{question}}</h1>
+  <div class="rating-container">
+    <ul>
+      <li *ngFor="let answer of answers"
+          [class.selected]="answer === selectedAnswer"
+          (click)="onSelect(answer)" class="rating-item">
+        <ion-icon name="checkmark"
+                  [class.selected]="answer === selectedAnswer"
+                  class="rating-item-icon"></ion-icon>
+        {{answer}}
+      </li>
+    </ul>
 
+  </div>
 </ion-content>
