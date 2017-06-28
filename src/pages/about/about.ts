@@ -49,7 +49,6 @@ export class AboutPage {
   selectedAnswer = '';
   totalPage = questions.length;
   currentQues = 0;
-  currentPage = 1;
   answers = questions[0].answers;
   question = questions[0].question;
   userAnswers = [];
@@ -60,9 +59,8 @@ export class AboutPage {
   }
 
   nextQuestion(): void {
-    if (this.currentPage < questions.length && this.selectedAnswer) {
+    if (this.currentQues + 1 < questions.length && this.selectedAnswer) {
       this.currentQues++;
-      this.currentPage++;
       this.answers = questions[this.currentQues].answers;
       this.question = questions[this.currentQues].question;
       this.selectedAnswer = this.userAnswers[this.currentQues];
@@ -71,7 +69,6 @@ export class AboutPage {
 
   prevQuestion(): void {
     this.currentQues--;
-    this.currentPage--;
     this.answers = questions[this.currentQues].answers;
     this.question = questions[this.currentQues].question;
     this.selectedAnswer = this.userAnswers[this.currentQues];
