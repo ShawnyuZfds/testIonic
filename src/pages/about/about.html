@@ -1,12 +1,15 @@
 <ion-header>
   <ion-navbar>
-    <ion-title text-center>
+    <ion-title>
       {{currentQues+1}} of {{totalPage}}
     </ion-title>
-    <button ion-button class="nav-button prev" (click)="prevQuestion()" *ngIf="currentQues!==0">previous</button>
-    <button ion-button class="nav-button next" (click)="nextQuestion()" *ngIf="currentQues+1!==totalPage">next</button>
-    <button ion-button class="nav-button next" (click)="nextQuestion()" *ngIf="currentQues+1===totalPage">finish
-    </button>
+    <ion-buttons start>
+      <button ion-button class="nav-button" (click)="prevQuestion()" *ngIf="currentQues!==0">previous</button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button class="nav-button" (click)="nextQuestion()" *ngIf="currentQues+1!==totalPage">next</button>
+      <button ion-button class="nav-button" (click)="nextQuestion()" *ngIf="currentQues+1===totalPage">finish</button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>

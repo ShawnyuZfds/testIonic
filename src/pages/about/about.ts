@@ -55,11 +55,11 @@ export class AboutPage {
 
   onSelect(answer): void {
     this.selectedAnswer = answer;
-    this.userAnswers[this.currentQues] = this.selectedAnswer;
   }
 
   nextQuestion(): void {
     if (this.currentQues + 1 < questions.length && this.selectedAnswer) {
+      this.userAnswers[this.currentQues] = this.selectedAnswer;
       this.currentQues++;
       this.answers = questions[this.currentQues].answers;
       this.question = questions[this.currentQues].question;
@@ -68,6 +68,7 @@ export class AboutPage {
   }
 
   prevQuestion(): void {
+    this.userAnswers[this.currentQues] = this.selectedAnswer;
     this.currentQues--;
     this.answers = questions[this.currentQues].answers;
     this.question = questions[this.currentQues].question;
