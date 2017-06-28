@@ -46,16 +46,24 @@ export class AboutPage {
 
   onSelect(answer): void {
     this.selectedAnswer = answer;
-    this.userAnswers.push(answer);
+    this.userAnswers[this.currentQues]=this.selectedAnswer;
   }
 
   nextQuestion(): void {
-    if (this.currentPage < questions.length && this.userAnswers[this.currentQues]) {
+    if (this.currentPage < questions.length && this.selectedAnswer) {
       this.currentQues++;
       this.currentPage++;
       this.answers = questions[this.currentQues].answers;
       this.question = questions[this.currentQues].question;
-      this.selectedAnswer = '';
+      this.selectedAnswer = this.userAnswers[this.currentQues];
     }
+  }
+
+  prevQuestion(): void {
+    this.currentQues--;
+    this.currentPage--;
+    this.answers = questions[this.currentQues].answers;
+    this.question = questions[this.currentQues].question;
+    this.selectedAnswer = this.userAnswers[this.currentQues];
   }
 }

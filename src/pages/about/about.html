@@ -3,7 +3,9 @@
     <ion-title text-center>
       {{currentPage}} of {{totalPage}}
     </ion-title>
-    <button ion-button class="nav-button" (click)="nextQuestion()">next</button>
+    <button ion-button class="nav-button prev" (click)="prevQuestion()" *ngIf="currentPage!==1">previous</button>
+    <button ion-button class="nav-button next" (click)="nextQuestion()" *ngIf="currentPage!==totalPage">next</button>
+    <button ion-button class="nav-button next" (click)="nextQuestion()" *ngIf="currentPage===totalPage">finish</button>
   </ion-navbar>
 
 </ion-header>
