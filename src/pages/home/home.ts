@@ -13,7 +13,6 @@ export class HomePage {
   }
 
   start_barcodescanner() {
-    alert('haha');
     this.barcodeScanner.scan().then((barcodeData) => {
       // Success! Barcode data is here
     }, (err) => {
