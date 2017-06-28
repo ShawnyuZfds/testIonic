@@ -22,7 +22,17 @@ const questions = [
       'Ok3ay',
       'B2ad',
       'Ter1rible']
-  }
+  },
+  {
+    question: "blah blah?",
+    answers: ['Excellent',
+      'baba',
+      'lala',
+      'oo',
+      'aweawe',
+      'meowmeow'
+  ]
+}
 
 ]
 
@@ -46,7 +56,7 @@ export class AboutPage {
 
   onSelect(answer): void {
     this.selectedAnswer = answer;
-    this.userAnswers[this.currentQues]=this.selectedAnswer;
+    this.userAnswers[this.currentQues] = this.selectedAnswer;
   }
 
   nextQuestion(): void {
