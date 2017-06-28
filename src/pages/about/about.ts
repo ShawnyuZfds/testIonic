@@ -31,8 +31,8 @@ const questions = [
       'oo',
       'aweawe',
       'meowmeow'
-  ]
-}
+    ]
+  }
 
 ]
 
