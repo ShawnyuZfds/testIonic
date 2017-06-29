@@ -1,19 +1,20 @@
 .nav-button {
-  //position: absolute;
-  //min-height: 56px;
-  //bottom: 0;
-  //width: 20%;
+  position: absolute;
+  height: 56px;
+  bottom: 0;
+  top:0;
+  width: 20%;
   //text-align: center;
   background-color: $pundit-green;
   color: #fff;
   margin: auto;
   //height: auto;
-  //&.next{
-  //  right: 0;
-  //}
-  //&.prev{
-  //  left: 0;
-  //}
+  &.next{
+    right: 0;
+  }
+  &.prev{
+    left: 0;
+  }
 }
 
 .rating-container ul {
