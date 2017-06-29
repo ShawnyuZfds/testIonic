@@ -23,13 +23,15 @@
   background-color: $pundit-green;
   border: 1px solid grey;
   margin-top: -2px;
+  padding: 0;
   .item-inner {
+    padding-left: 1rem;
     border: 0 !important;
-    .input-wrapper{
+    .input-wrapper {
       display: block;
       position: absolute;
       width: 100%;
-      padding-left: 3rem;
+      padding-left: 4rem;
     }
   }
 }
