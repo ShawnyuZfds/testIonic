@@ -1,9 +1,13 @@
+.footer{
+  height: 6rem;
+}
+
 .nav-button {
   position: absolute;
-  height: 56px;
+  //height: 56px;
   bottom: 0;
   top: 0;
-  width: 50%;
+  width: 49%;
   //text-align: center;
   background-color: $pundit-green;
   color: #fff;
