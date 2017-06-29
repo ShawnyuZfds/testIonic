@@ -4,11 +4,11 @@
 
 .nav-button {
   position: absolute;
-  //height: 56px;
-  bottom: 0;
-  top: 0;
+  height: 5rem;
+  top: 1rem;
   width: 49%;
   //text-align: center;
+  border-radius: 0;
   background-color: $pundit-green;
   color: #fff;
   margin: auto;

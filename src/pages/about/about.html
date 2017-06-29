@@ -31,7 +31,6 @@
   </div>
 </ion-content>
 <ion-footer>
-  <ion-toolbar>
     <ion-buttons>
       <button ion-button start class="nav-button prev" (click)="prevQuestion()" *ngIf="currentQues!==0">previous
       </button>
@@ -40,6 +39,5 @@
       <button ion-button end class="nav-button next" (click)="nextQuestion()" *ngIf="currentQues+1===totalPage">finish
       </button>
     </ion-buttons>
-  </ion-toolbar>
 </ion-footer>
 
