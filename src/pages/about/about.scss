@@ -2,22 +2,33 @@
   position: absolute;
   height: 56px;
   bottom: 0;
-  top:0;
+  top: 0;
   width: 20%;
   //text-align: center;
   background-color: $pundit-green;
   color: #fff;
   margin: auto;
   //height: auto;
-  &.next{
+  &.next {
     right: 0;
   }
-  &.prev{
+  &.prev {
     left: 0;
   }
 }
 
-.rating-container ul {
+.rating-item {
+  height: 5rem;
+  color: #fff;
+  background-color: $pundit-green;
+  border: 1px solid grey;
+  margin-top: -2px;
+  .item-inner {
+    border: 0 !important;
+  }
+}
+
+/*.rating-container ul {
   list-style-type: none;
   padding: 0;
   .rating-item {
@@ -42,4 +53,4 @@
       }
     }
   }
-}
+}*/
