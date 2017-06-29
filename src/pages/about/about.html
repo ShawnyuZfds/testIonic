@@ -10,7 +10,7 @@
 <ion-content>
   <h1 padding text-center>{{question}}</h1>
   <div class="rating-container">
-    <ion-list radio-group>
+    <ion-list radio-group [(ngModel)]="selectedAnswer">
       <ion-item class="rating-item" *ngFor="let answer of answers">
         <ion-label>{{answer}}</ion-label>
         <ion-radio value={{answer}}></ion-radio>

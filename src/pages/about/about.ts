@@ -46,16 +46,17 @@ export class AboutPage {
 
   }
 
-  selectedAnswer = '';
   totalPage = questions.length;
   currentQues = 0;
   answers = questions[0].answers;
   question = questions[0].question;
+  selectedAnswer = '';
   userAnswers = [];
 
-  onSelect(answer): void {
-    this.selectedAnswer = answer;
-  }
+
+  // onSelect(answer): void {
+  //   this.selectedAnswer = answer;
+  // }
 
   nextQuestion(): void {
     if (this.currentQues + 1 < questions.length && this.selectedAnswer) {
