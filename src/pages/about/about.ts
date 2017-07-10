@@ -1,6 +1,6 @@
 import {Component} from "@angular/core";
 import {NavController} from "ionic-angular";
-
+import {ContactPage} from "../contact/contact";
 const questions = [
   {
     question: "How would you rate your chicken shawama sandwich?",
@@ -65,6 +65,11 @@ export class AboutPage {
       this.answers = questions[this.currentQues].answers;
       this.question = questions[this.currentQues].question;
       this.selectedAnswer = this.userAnswers[this.currentQues];
+    } else if (this.currentQues + 1 === questions.length && this.selectedAnswer) {
+      this.navCtrl.setRoot(ContactPage, {}, {
+        animate: true,
+        direction: 'forward'
+      });
     }
   }
 

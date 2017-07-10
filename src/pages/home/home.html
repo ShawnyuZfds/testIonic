@@ -5,8 +5,19 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button block icon-left outline color="dark"  (click)="start_barcodescanner()">
+  <button ion-button block icon-left outline color="dark" (click)="start_barcodescanner()">
     <ion-icon name="camera"></ion-icon>
-   Scan1
+    Scan
+  </button>
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating>barcode</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button block icon-left color="dark" (click)="toQuesPage()">
+    Confirm
   </button>
 </ion-content>

@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Buttons In Components</ion-title>
+    <ion-title>Thank you page</ion-title>
     <ion-buttons start>
       <button ion-button icon-only>
         <ion-icon name='contact'></ion-icon>
@@ -15,63 +15,9 @@
 </ion-header>
 
 <ion-content padding class="buttons-components-page">
-  <ion-card>
-    <ion-card-content>
-      <img src="assets/img/img-icon.png"/>
-    </ion-card-content>
-
-    <ion-item>
-      <button ion-button clear item-start>Like</button>
-      <button ion-button clear item-end>Comment</button>
-    </ion-item>
-  </ion-card>
-
-  <ion-list>
-    <ion-item>
-      Inner Button
-      <button ion-button item-end outline>Outline</button>
-    </ion-item>
-
-    <ion-item>
-      Left Icon Button
-      <button ion-button item-end outline icon-start>
-        <ion-icon name='star'></ion-icon>
-        Left Icon
-      </button>
-    </ion-item>
-
-    <ion-item>
-      Right Icon Button
-      <button ion-button item-end outline icon-end>
-        Right Icon
-        <ion-icon name='star'></ion-icon>
-      </button>
-    </ion-item>
-  </ion-list>
-
-  <ion-list radio-group>
-    <ion-list-header>
-      Language
-    </ion-list-header>
-
-    <ion-item>
-
-      <ion-radio checked="true" value="go"></ion-radio>
-      <ion-label>Go</ion-label>
-    </ion-item>
-
-    <ion-item>
-
-      <ion-radio value="rust"></ion-radio>
-      <ion-label>Rust</ion-label>
-    </ion-item>
-
-    <ion-item>
-
-      <ion-radio value="python" disabled="true"></ion-radio>
-      <ion-label>Python</ion-label>
-    </ion-item>
-  </ion-list>
-
-
+Thank You!!
+  <button ion-button block outline color="dark" (click)="toHomePage()">
+    <ion-icon name="home"></ion-icon>
+    Go back to home page
+  </button>
 </ion-content>
